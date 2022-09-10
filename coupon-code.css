@@ -1,0 +1,33 @@
+.modal-header button.close{
+    background-color:#1fd9f6 ;
+    border: none;
+    color: aliceblue;
+    font-size: larger;
+}
+#staticBackdrop .modal-content{
+    width: 700px;
+}
+#btn-coupon,#btn-shop{
+    position: absolute;
+    
+}
+.left-0{
+    right:0;
+    color: black;
+    z-index: 1;
+}
+#btn-coupon{
+    top:300%;
+    left: 15%;
+}
+#btn-shop{
+    top:350%;
+    left:30%;
+}
+#coupon-code-div{
+        top: 280%;
+        left: 11%;
+}
+.fs-10{
+    font-size: 14px;
+}

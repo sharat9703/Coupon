@@ -19,15 +19,15 @@ coupon.onclick=()=>{
 alert('copied to clipboard');
   }); 
 }
-let body = document.querySelectorAll('.blur-when-modal');
+
 let body_container = document.querySelectorAll('.body.modal-open');
-let superContainer = document.querySelector('.super-container');
+
 
 
 window.onload=()=>{
   let myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
   myModal.show(); 
-  superContainer.style.marginTop="91px";
+
 
 }
 

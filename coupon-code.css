@@ -22,12 +22,15 @@
 }
 #btn-shop{
     top:350%;
-    left:30%;
+    left:32%;
 }
 #coupon-code-div{
         top: 280%;
-        left: 11%;
+        left: 20%;
 }
 .fs-10{
-    font-size: 14px;
+    font-size: 12px;
+}
+#coupon-code-span{
+    cursor: pointer;
 }

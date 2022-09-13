@@ -21,8 +21,6 @@ coupon.onclick = () => {
   });
 };
 
-let body_container = document.querySelectorAll(".body.modal-open");
-
 window.onload = () => {
   let myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
   myModal.show();

@@ -13,18 +13,25 @@ coupon.onclick=()=>{
 alert('copied to clipboard');
   }); 
 }
-let body = document.querySelector('blur-when-modal');
+let body = document.querySelectorAll('.blur-when-modal');
+let body_container = document.querySelectorAll('.body.modal-open');
+let superContainer = document.querySelector('.super-container');
+
 
 window.onload=()=>{
   let myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
-myModal.show();
+  myModal.show();
 
-body.classList.add('blur');
+  
+  body_container[0].style.paddingRight="0px";
+  
+  superContainer.style.marginTop="91px";
+
 }
 
 let close_button = document.querySelector('.close');
 
 close_button.onclick=()=>{
 coupon.classList.toggle('d-none');
-body.classList.remove('blur');
+
 }

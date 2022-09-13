@@ -34,3 +34,11 @@
 #coupon-code-span{
     cursor: pointer;
 }
+.blur{
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px) saturate(120%) contrast(200%);
+    height: 100vh;
+}
+.modal{
+    z-index: 1000000001;
+}

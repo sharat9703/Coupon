@@ -13,9 +13,10 @@
 <!---font icon link-->
     <script src="https://kit.fontawesome.com/fd15ff6187.js" crossorigin="anonymous"></script>
 <!--Custom-CSS-->
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="./coupon-code.css">
 </head>
-<body>
+<body class="h-100">
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-black position-fixed top-0 w-100" style=" height: 90px;z-index: 1000000000;">
     <a class="navbar-brand ms-3 p-1 hover " href="#"><img src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg" alt="AmazonLogo" height="60px" width="90px" class="mt-1" ><span class="fs-6">.in</span></a>
     <div class=" nav-item">
@@ -660,6 +661,62 @@
         <p class="text-light text-center">&copy; Sharat's Lab</p>
     
 </footer>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content p-0 border-0 shadow">
+        <div class="modal-header p-0 border-0 d-flex justify-content-end align-items-end">
+          <button type="button" class="close position-absolute top-0 left-0" data-bs-dismiss="modal" aria-label="Close">
+            &times;
+          </button>
+        </div>
+        <div class="row g-0">
+       
+          <div class="col-5">
+
+           <div class="modal-body p-5" style="background-color: rgba(255, 255, 255,0.7);">
+            <div><h3 class="text-black fw-bold">Upto</h3></div>    
+            <div><h1 class="text-black fw-bold">30%</h1></div>
+                <div><h1 class="text-black mt-3 fw-bold">OFF</h1></div>
+                <div><h6 class="text-black mt-3 fw-bold text-center"  style="margin-left: -15px;">On All</h6></div>
+                <div class="text-center" style="margin-left: -15px;">
+                  <span class="badge bg-dark text-white mt-3 fw-bold fs-6">Pet Products</span>
+                </div>
+                <div>
+                  <p class="text-black mt-3 fw-bold">Hurry up! Offer only till this Weekend</p>
+                </div>
+                <div>
+                  <p class="text-black mt-3 fw-bold fs-10">(Please redeem this code while you are checking out)</p>
+                </div>
+             </div>
+          </div>
+          
+          <div class="col-7" style="background-image: url('https://images.pexels.com/photos/1366996/pexels-photo-1366996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-repeat:no-repeat;background-size: cover;background-position:center;">
+            
+            <div class="modal-body p-5" >
+               
+              <button id="btn-coupon" class="btn btn-info mt-5 text-white">Get the Coupon Code!</button>
+              <button id="btn-shop"  type="button" class="btn btn-info mt-5 text-white">Shop Now</button>
+
+              <div id="coupon-code-div"  class="position-absolute d-none">
+
+                
+                <textarea id="couponText"class="d-none">PETCODES12</textarea>
+                <h3><span id="coupon-code-span" class="fw-bold badge bg-black" value="PETCODES12">PETCODES12</span></h3>
+
+                   
+
+              </div>
+
+              </div>
+          </div>
+        
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
 <script src="./dark-light.js"></script>
 <script src="./coupon-code.js"></script>
 </body>

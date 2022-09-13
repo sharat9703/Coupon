@@ -76,9 +76,9 @@
 
                 
                 <textarea id="couponText"class="d-none">PETCODES12</textarea>
-                <h3>
+                <h3 data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="this is a tooltip">
                   <span id="coupon-code-span" class="fw-bold badge bg-black">
-                    <a href="#" class="text-decoration-none text-white tt" data-bs-placement="top" title="this is a tooltip">PETCODES12</a> 
+                    PETCODES12 
                   </span>
                 </h3>
 
@@ -99,9 +99,6 @@
         
     </div>
     <script src="coupon-code.js"></script>
-    <script>
-      const tooltipTriggerList =[].slice.call(document.querySelectorAll('.tt'));
- tooltipTriggerList.forEach(t => new bootstrap.Tooltip(t));
-    </script>
+    
 </body>
 </html>

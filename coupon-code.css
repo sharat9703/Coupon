@@ -37,14 +37,19 @@
 
 .modal{
     z-index: 11000000000;
+    }
+.shadow{
+    box-shadow: 30px 30px 50px rgb(249, 246, 248);
+
 }
 
  body.modal-open .super-container{
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
    filter: blur(8px);    
+   background: linear-gradient(180deg,rgba(255,255,255,0.5),rgba(255,247,255,0.8));
 }
 body.modal-open{
 position: absolute;

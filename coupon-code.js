@@ -1,48 +1,35 @@
-
-
 // Initialize tooltips
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl);
 });
 
+const couponCode = document.getElementById("coupon-code-div");
 
-
-
-
-
-const couponCode= document.getElementById('coupon-code-div');
-
-const couponbtn=document.getElementById('btn-coupon');        
-couponbtn.onclick= ()=>{
-  couponCode.classList.toggle('d-none');
+const couponbtn = document.getElementById("btn-coupon");
+couponbtn.onclick = () => {
+  couponCode.classList.toggle("d-none");
 };
-const coupon= document.getElementById('coupon-code-span');
-const couponText = document.getElementById('couponText');
+const coupon = document.getElementById("coupon-code-span");
+const couponText = document.getElementById("couponText");
 
-coupon.onclick=()=>{
+coupon.onclick = () => {
+  navigator.clipboard.writeText(couponText.value).then(() => {
+    alert("copied to clipboard");
+  });
+};
 
-  navigator.clipboard.writeText(couponText.value).then(()=>{
-alert('copied to clipboard');
-  }); 
-}
+let body_container = document.querySelectorAll(".body.modal-open");
 
-let body_container = document.querySelectorAll('.body.modal-open');
-
-
-
-window.onload=()=>{
+window.onload = () => {
   let myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
-  myModal.show(); 
+  myModal.show();
+};
 
+let close_button = document.querySelector(".close");
 
-}
-
-let close_button = document.querySelector('.close');
-
-close_button.onclick=()=>{
-coupon.classList.toggle('d-none');
-
-}
-
-
+close_button.onclick = () => {
+  coupon.classList.toggle("d-none");
+};
